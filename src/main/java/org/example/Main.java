@@ -9,11 +9,8 @@ public class Main {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
 
         PersonRepo pr = new PersonRepo();
-
         Person person = new Person("Bob", 22);
-        pr.addPerson(person);
 
-        Person found = pr.findPersonById(1L);
-        System.out.println(found.getName());
+        pr.addPerson(person);
     }
 }
